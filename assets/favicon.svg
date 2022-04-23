@@ -9,9 +9,9 @@
   <defs>
     <!-- Custom gradient -->
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(65)">
-      <stop offset="0%" stop-color="rgba(58,125,180,1)" />
-      <stop offset="50%" stop-color="rgba(29,242,253,1)" />
-      <stop offset="100%" stop-color="rgba(69,252,205,1)" />
+      <stop offset="0%" stop-color="rgba(255,100,0,1)" />
+      <stop offset="50%" stop-color="rgba(253,170,29,1)" />
+      <stop offset="100%" stop-color="rgba(252,205,69,1)" />
     </linearGradient>
   </defs>
 
