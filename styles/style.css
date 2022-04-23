@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   width: 100vw;
+  padding: 15px;
   background-color: #101010;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,13 +20,14 @@ body {
 }
 
 main {
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .rust-text {
+  font-weight: bold;
   background: -webkit-linear-gradient(56deg, rgba(255,100,0,1) 0%, rgba(253,170,29,1) 50%, rgba(252,205,69,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
