@@ -4,8 +4,10 @@
   margin: 0px;
 }
 
+
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   padding: 15px;
   background-color: #101010;
@@ -17,6 +19,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+html, body {
+  /* mobile viewport bug fix */
+  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
 }
 
 main {
