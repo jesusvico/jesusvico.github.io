@@ -1,0 +1,73 @@
+baseurl: https://jvico.dev
+languageCode: en-us
+theme: PaperMod
+paginate: 5
+title: Jesus Vico
+
+DefaultContentLanguage: en
+
+#permalinks:
+#  posts: /p/:slug/
+#  pages: /:slug/
+
+params:
+
+  env: production
+  description: Jesus Vico Blog
+  author: Jesus Vico
+  
+  homeInfoParams:
+    Title: Welcome to my blog
+    Content: >
+      Hello, my name is Jesus Vico. 
+      I am a cryptography and peer-to-peer networks enthusiast
+      who is interested in the philosophical questions raised 
+      by new cryptographic technologies. 
+
+  socialIcons: # optional
+    - name: "Github"
+      url: "https://github.com/jesusvico"
+    - name: "Linkedin"
+      url: "https://www.linkedin.com/in/jesus-vico/"
+
+  mainSections:
+    - posts
+  featuredImageField: image
+  rssFullContent: true
+  favicon:
+
+  article:
+    math: true
+    readingTime: false
+
+  comments:
+    enabled: false
+
+  opengraph:
+    twitter:
+      # Your Twitter username
+      site:
+      # Available values: summary, summary_large_image
+      card: summary_large_image
+
+  defaultImage:
+    opengraph:
+      enabled: false
+      local: false
+      src:
+
+# Page content
+menu:
+  main:
+    - name: About
+      url: about
+      weight: 2
+    #- name: Search
+    #  url: search/
+    #  weight: 10
+    - name: Archive
+      url: archives
+      weight: 50
+    - name: Tags
+      url: tags/
+      weight: 100
