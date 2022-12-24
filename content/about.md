@@ -32,4 +32,4 @@ My name is Jesus Vico, a Telecommunications Engineer interested in the use of cr
 
 - Spanish (Native)
 - Catalan (Native)
-- English (B2 Cambridge First)
+- English (C1 Cambridge Advanced)
