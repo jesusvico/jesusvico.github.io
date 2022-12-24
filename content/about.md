@@ -1,9 +1,8 @@
 ---
-title: "About"
-layout: "about"
-summary: about
-author: " "
+title: About
 ---
+
+# About
 
 My name is Jesus Vico, a Telecommunications Engineer interested in the use of cryptography to develop trustless systems. Because of this, I am trying to study every technology that helps us to develop them: peer-to-peer networks, blockchain, zero-knowledge proofs, trapdoor functions, and etcetera.
 
