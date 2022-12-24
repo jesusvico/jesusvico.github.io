@@ -11,7 +11,16 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+      
       - name: Install pandoc
         run: sudo apt-get install pandoc
+        
       - name: Generate files
         run: bash script.sh
+        
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1
+        with:
+          file-path: public
+          commit-msg: Update resources
+          github-token: ${{ secrets.GITHUB_TOKEN }}
