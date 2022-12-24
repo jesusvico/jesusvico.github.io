@@ -94,6 +94,7 @@ nav ul li a {
     font-size: 18px;
     font-weight: 300;
     line-height : 1.5em;
+    padding: 10px;
 }
 
 .content h1 {
