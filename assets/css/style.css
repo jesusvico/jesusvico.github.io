@@ -92,10 +92,12 @@ nav ul li a {
     width: 100vw;
     max-width: 720px;
     font-size: 18px;
+    font-weight: 300;
+    line-height : 1.5em;
 }
 
 .content h1 {
-    margin: 10px 0px;
+    margin: 30px 0px;
     font-size: 40px;
 }
 
@@ -105,8 +107,12 @@ nav ul li a {
     margin: 10px 0px 30px 0px;
 }
 
-.content hr {
+.content h2, .content h3 {
     margin: 10px 0px;
+}
+
+.content hr {
+    margin: 20px 0px;
 }
 
 .content ul {
