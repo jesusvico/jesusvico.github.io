@@ -18,9 +18,14 @@ jobs:
       - name: Generate files
         run: bash script.sh
         
+      - name: Copy /public to /docs (for Github Pages)
+        run: cp public docs
+        
       - name: Update resources
         uses: test-room-7/action-update-file@v1
         with:
-          file-path: public/*
+          file-path: |
+            public/*
+            docs/*
           commit-msg: Update resources
           github-token: ${{ secrets.GITHUB_TOKEN }}
