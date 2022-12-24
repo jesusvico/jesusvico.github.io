@@ -19,7 +19,7 @@ jobs:
         run: bash script.sh
         
       - name: Copy /public to /docs (for Github Pages)
-        run: cp public docs
+        run: cp -r public docs
         
       - name: Update resources
         uses: test-room-7/action-update-file@v1
