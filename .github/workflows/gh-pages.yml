@@ -18,14 +18,19 @@ jobs:
       - name: Generate files
         run: bash script.sh
         
-      - name: Copy /public to /docs (for Github Pages)
-        run: cp -r public docs
-        
       - name: Update resources
         uses: test-room-7/action-update-file@v1
         with:
-          file-path: |
-            public/*
-            docs/*
+          file-path: public/*
           commit-msg: Update resources
           github-token: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Perform Checkout
+        uses: actions/checkout@v2
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
