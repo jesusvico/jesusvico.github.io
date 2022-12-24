@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate files
-        run: chmod +x ./script.sh && ./script.sh
+        run: apt update && apt install -y pandoc && chmod +x ./script.sh && ./script.sh
         shell: bash
