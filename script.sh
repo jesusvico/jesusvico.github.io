@@ -3,6 +3,7 @@ rm -rf public/posts/*
 
 # Read all posts and generate a button for the index
 POSTS_DATA=""
+echo "Generating the INDEX"
 for file in content/posts/*; do
     FILE_NAME=$(echo "$file" | sed 's|content/posts/||' | sed 's/.md//')
     TITLE=$(grep -m 1 "^title:" $file | sed "s/^title://" | sed "s/^ *//")
@@ -16,6 +17,7 @@ cp templates/index.html public/index.html
 # Add the posts data (We use the | separator because there are / inside the variable)
 sed -i -e "s|<div id=\"posts\">|<div id=\"posts\">$POSTS_DATA|" public/index.html
 
+echo "Updating content/about.md"
 # Create the about.html in public
 pandoc \
     --standalone \
@@ -25,6 +27,7 @@ pandoc \
 
 # Create the posts in public
 for file in content/posts/*; do
+    echo "Updating $file"
     FILE_NAME=$(echo "$file" | sed 's|content/posts/||' | sed 's/.md//')
     mkdir public/posts/$FILE_NAME
     pandoc \
